@@ -38,10 +38,10 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-4">Support</h3>
             <ul className="space-y-2 text-gray-400">
-              <FooterLink href="#">Help Center</FooterLink>
-              <FooterLink href="#">Contact Us</FooterLink>
-              <FooterLink href="#">Privacy Policy</FooterLink>
-              <FooterLink href="#">Terms of Service</FooterLink>
+              <FooterLink href="/help-center">Help Center</FooterLink>
+              <FooterLink href="/contact-us">Contact Us</FooterLink>
+              <FooterLink href="/privacy-policy">Privacy Policy</FooterLink>
+              <FooterLink href="/terms-and-conditions">Terms of Service</FooterLink>
             </ul>
           </div>
           
