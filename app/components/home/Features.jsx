@@ -7,7 +7,7 @@ export default function Features () {
       icon: <Smartphone className="w-8 h-8" />,
       title: "Easy to Use",
       description: "Intuitive interface for both iOS and Android users",
-      color: "bg-red-500"
+      color: "bg-[#A1241C]"
     },
     {
       icon: <Clock className="w-8 h-8" />,

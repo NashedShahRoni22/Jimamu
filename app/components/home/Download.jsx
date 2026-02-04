@@ -17,17 +17,17 @@ export default function Download() {
         "Verified rider badge"
     ];
     return (
-        <section id="download" className="py-20 bg-gradient-to-r from-red-500 to-blue-500">
+        <section id="download" className="py-20 bg-gray-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div className="space-y-8">
-                    <h2 className="text-4xl font-bold text-white mb-4">Ready to Get Started?</h2>
-                    <p className="text-xl text-white/90 max-w-2xl mx-auto">
+                    <h2 className="text-4xl font-bold text-gray-900 mb-4">Ready to Get Started?</h2>
+                    <p className="text-xl text-gray-700 max-w-2xl mx-auto">
                         Download Jimamu today and experience the future of parcel delivery.
                         Available on both iOS and Android platforms.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <button className="bg-white text-red-500 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center space-x-2">
+                        <button className="bg-white text-[#A1241C] hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center space-x-2">
                             <DownloadIcon className="w-5 h-5" />
                             <span>Download for iOS</span>
                         </button>

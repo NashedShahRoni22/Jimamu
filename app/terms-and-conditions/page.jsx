@@ -1,47 +1,92 @@
 export default function TermsPage() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-10 min-h-screen flex flex-col justify-center items-center">
-      <h1 className="text-3xl font-bold mb-6">Terms & Conditions</h1>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-10 min-h-screen">
+      <div className="text-center">
+        <h1 className="text-4xl font-bold mb-4">Terms & Conditions</h1>
+        <p className="text-gray-500">Effective Date: February 2026</p>
+      </div>
 
-      <section className="space-y-6 text-gray-700">
+      <section className="space-y-8 text-gray-700 max-w-4xl mx-auto">
+        {/* 1. Introduction */}
         <div>
-          <h2 className="text-xl font-semibold mb-2">1. Introduction</h2>
+          <h2 className="text-2xl font-semibold mb-3 text-gray-900 border-b pb-2">1. Introduction</h2>
           <p>
-            Welcome to <strong>Jimamu</strong>, a national and global parcel delivery platform.
-            By accessing or using our platform, you agree to comply with and be bound
-            by these Terms & Conditions. Please read them carefully before using the service.
+            Welcome to <strong>Jimamu</strong>. By accessing our platform, you agree to be bound by these Terms & Conditions. Jimamu acts as a marketplace connecting independent Riders with Users for parcel delivery services.
           </p>
         </div>
 
+        {/* 2. User & Rider Registration */}
         <div>
-          <h2 className="text-xl font-semibold mb-2">2. User Registration</h2>
+          <h2 className="text-2xl font-semibold mb-3 text-gray-900 border-b pb-2">2. User Registration</h2>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Users must provide accurate profile details including a unique username and valid contact information.</li>
+            <li><strong>Rider Verification:</strong> Riders must submit valid government-issued ID (Passport or Driver’s License) and professional banking information (including Transit and Institution numbers for Canada).</li>
+            <li>Riders are independent contractors and are not employees of Jimamu.</li>
+          </ul>
+        </div>
+
+        {/* 3. Delivery Services */}
+        <div>
+          <h2 className="text-2xl font-semibold mb-3 text-gray-900 border-b pb-2">3. Service Types</h2>
+          <p>Jimamu facilitates two primary types of delivery requests:</p>
+          <ul className="list-disc pl-6 mt-2 space-y-2">
+            <li><strong>National (Domestic):</strong> Deliveries within the same country (e.g., within Canada).</li>
+            <li><strong>Global (International):</strong> Cross-border deliveries between different countries.</li>
+          </ul>
+        </div>
+
+        {/* 4. Pricing & Minimum Offers */}
+        <div>
+          <h2 className="text-2xl font-semibold mb-3 text-gray-900 border-b pb-2">4. Pricing & The Offer System</h2>
+          <p>Jimamu allows Users to suggest an estimated offer for their delivery. However, to ensure fair compensation and service sustainability, the following <strong>Minimum Floors</strong> apply:</p>
+          <div className="mt-4 bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500">
+            <ul className="list-none space-y-2 font-medium">
+              <li>🇨🇦 <strong>National (Canada):</strong> Minimum offer starts at <strong>$10.00 CAD</strong>.</li>
+              <li>🌎 <strong>Global (International):</strong> Minimum offer starts at <strong>$30.00 CAD</strong>.</li>
+            </ul>
+          </div>
+          <p className="mt-3 text-sm">
+            Offers below these thresholds will not be accepted by the platform. Higher offers are recommended for heavy items, long distances, or urgent deliveries to attract Riders more quickly.
+          </p>
+        </div>
+
+        {/* 5. Prohibited Items */}
+        <div>
+          <h2 className="text-2xl font-semibold mb-3 text-gray-900 border-b pb-2">5. Prohibited Items</h2>
+          <p>Users must not request the delivery of:</p>
           <ul className="list-disc pl-6 space-y-1">
-            <li>All users must register with a valid email address and verify their account.</li>
-            <li>Users must provide accurate details including unique username, phone number, date of birth, and gender.</li>
-            <li>
-              Riders must provide valid identification documents (Passport, Driving License, or Birth Certificate with scanned image) for verification. Approval is subject to admin review.
-            </li>
+            <li>Illegal drugs or controlled substances.</li>
+            <li>Hazardous materials, explosives, or firearms.</li>
+            <li>Currency, high-value jewelry, or unprotected fragile items.</li>
+            <li>Any item prohibited by local or international customs laws.</li>
           </ul>
         </div>
 
+        {/* 6. Payments & Payouts */}
         <div>
-          <h2 className="text-xl font-semibold mb-2">3. Services</h2>
-          <p>
-            Jimamu connects <strong>Users</strong> (who post delivery requests) with{" "}
-            <strong>Riders</strong> (who bid to complete deliveries).
-          </p>
-          <ul className="list-disc pl-6 mt-2 space-y-1">
-            <li><strong>Global Orders</strong> – Delivery within the country.</li>
-            <li><strong>National Orders</strong> – International deliveries.</li>
+          <h2 className="text-2xl font-semibold mb-3 text-gray-900 border-b pb-2">6. Payments & Payouts</h2>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Payments are held in escrow by Jimamu and released to the Rider only upon successful delivery verification (via OTP or digital signature).</li>
+            <li>Riders are responsible for all taxes (including income tax and HST/GST in Canada) arising from their earnings.</li>
           </ul>
-          <p className="mt-2">
-            Users are responsible for providing accurate details about pickup & drop-off
-            locations, receiver information, product type, weight, and value.
+        </div>
+
+        {/* 7. Dispute Resolution */}
+        <div className="bg-red-50 p-6 rounded-xl border border-red-100">
+          <h2 className="text-xl font-bold mb-2 text-red-900">7. Dispute Resolution</h2>
+          <p className="text-red-800">
+            In the event of a lost, damaged, or delayed parcel, Jimamu will investigate based on the "Order Photos" provided at pickup and drop-off. Our liability is limited to the platform service fee unless additional insurance was purchased.
           </p>
         </div>
 
-        {/* Continue sections 4–10 with same pattern */}
+        {/* 8. Governing Law */}
+        <div>
+          <h2 className="text-2xl font-semibold mb-3 text-gray-900 border-b pb-2">8. Governing Law</h2>
+          <p>
+            These terms are governed by the laws of the province and country in which the service is registered (Canada). International disputes will be handled through arbitration as defined by Jimamu's legal headquarters.
+          </p>
+        </div>
       </section>
     </div>
-  )
+  );
 }

@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Mail, MessageCircle, User, Package, Wallet } from "lucide-react";
+import { Mail, MessageCircle, User, Wallet, Globe } from "lucide-react";
 
 export default function HelpCenterPage() {
   const [openFAQ, setOpenFAQ] = useState(null);
@@ -10,84 +10,83 @@ export default function HelpCenterPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-emerald-600 to-emerald-700 text-white py-16 px-6 text-center">
-        <h1 className="text-4xl font-bold">Help Center</h1>
-        <p className="mt-3 max-w-2xl mx-auto text-lg text-emerald-100">
-          Find answers to common questions, explore guides, or get in touch with
-          our support team. We’re here to help you with Jimamu.
+    <div className="min-h-screen bg-gray-50 py-16">
+      {/* Hero Section - Updated to your Red theme */}
+      <div className="bg-gradient-to-r from-red-600 to-red-700 text-white py-20 px-6 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold">How can we help?</h1>
+        <p className="mt-4 max-w-2xl mx-auto text-lg text-red-50">
+          Find answers to common questions about Jimamu's global and national delivery network.
         </p>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
-        {/* Categories */}
-        <section>
-          <h2 className="text-2xl font-semibold mb-8 text-center">
-            Support Categories
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="p-6 rounded-2xl bg-white border shadow-sm hover:shadow-md transition">
-              <User className="h-8 w-8 text-emerald-600 mb-4" />
-              <h3 className="font-semibold text-lg mb-2">
-                Account & Registration
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Learn how to create an account, verify your details, and manage
-                your profile securely.
-              </p>
-            </div>
-            <div className="p-6 rounded-2xl bg-white border shadow-sm hover:shadow-md transition">
-              <Package className="h-8 w-8 text-emerald-600 mb-4" />
-              <h3 className="font-semibold text-lg mb-2">Orders & Deliveries</h3>
-              <p className="text-gray-600 text-sm">
-                Information on placing orders, tracking deliveries, and resolving
-                delivery issues efficiently.
-              </p>
-            </div>
-            <div className="p-6 rounded-2xl bg-white border shadow-sm hover:shadow-md transition">
-              <Wallet className="h-8 w-8 text-emerald-600 mb-4" />
-              <h3 className="font-semibold text-lg mb-2">Payments & Wallet</h3>
-              <p className="text-gray-600 text-sm">
-                Understand fares, payments, refunds, and wallet transactions.
-              </p>
-            </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 space-y-16">
+        {/* Support Categories */}
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="p-8 rounded-2xl bg-white border shadow-sm hover:shadow-lg transition group">
+            <User className="h-10 w-10 text-blue-600 mb-4 group-hover:scale-110 transition-transform" />
+            <h3 className="font-bold text-xl mb-2">Rider Registration</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Required documents for Canada: ID, Transit Number, and SIN for tax compliance.
+            </p>
+          </div>
+          <div className="p-8 rounded-2xl bg-white border shadow-sm hover:shadow-lg transition group">
+            <Globe className="h-10 w-10 text-red-600 mb-4 group-hover:scale-110 transition-transform" />
+            <h3 className="font-bold text-xl mb-2">National & Global</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Understand the difference between domestic (Canada) and international delivery routes.
+            </p>
+          </div>
+          <div className="p-8 rounded-2xl bg-white border shadow-sm hover:shadow-lg transition group">
+            <Wallet className="h-10 w-10 text-green-600 mb-4 group-hover:scale-110 transition-transform" />
+            <h3 className="font-bold text-xl mb-2">Earnings & Offers</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Learn about our $10 CAD national floor and how to receive payouts.
+            </p>
           </div>
         </section>
 
         {/* FAQ Section */}
         <section>
-          <h2 className="text-2xl font-semibold mb-8 text-center">
-            Frequently Asked Questions
-          </h2>
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-gray-900">Frequently Asked Questions</h2>
+            <p className="text-gray-500 mt-2">Quick answers to our most popular queries</p>
+          </div>
           <div className="space-y-4 max-w-3xl mx-auto">
             {[
               {
-                q: "How do I register as a Rider?",
-                a: "To register as a Rider, provide a valid email, username, phone number, date of birth, and upload an identification document. Your profile will be verified by our admin team.",
+                q: "What is the minimum offer for a delivery?",
+                a: "For National orders (within Canada), the minimum offer is $10.00 CAD. For Global (International) orders, the minimum offer starts at $30.00 CAD. This ensures our Riders are fairly compensated.",
               },
               {
-                q: "Can I cancel an order?",
-                a: "Yes, you can cancel before a Rider accepts your order. If canceled after acceptance, the Base Fare + Platform Fee will be charged.",
+                q: "What bank info do I need as a Canadian Rider?",
+                a: "To receive payouts, you must provide your 5-digit Transit Number, 3-digit Institution Number, and Account Number. You will also need to provide your SIN for tax purposes.",
               },
               {
-                q: "What if a Rider cancels my delivery?",
-                a: "If a Rider cancels or fails to deliver, you will be fully refunded. Riders who cancel repeatedly may face account suspension.",
+                q: "How does the OTP verification work?",
+                a: "Once a Rider arrives at the drop-off location, the User must provide the OTP (generated in the app) to the Rider. This confirms delivery and releases payment from escrow.",
+              },
+              {
+                q: "Are my documents secure?",
+                a: "Yes. Jimamu uses high-level encryption for all sensitive data, including your Government IDs and banking information, complying with Canadian PIPEDA regulations.",
               },
             ].map((faq, idx) => (
               <div
                 key={idx}
-                className="bg-white border rounded-xl shadow-sm p-4 cursor-pointer"
-                onClick={() => toggleFAQ(idx)}
+                className="bg-white border rounded-xl overflow-hidden transition-all duration-200"
               >
-                <h3 className="font-medium flex justify-between items-center">
-                  {faq.q}
-                  <span className="text-emerald-600">
-                    {openFAQ === idx ? "−" : "+"}
+                <button
+                  className="w-full p-5 text-left flex justify-between items-center hover:bg-gray-50"
+                  onClick={() => toggleFAQ(idx)}
+                >
+                  <span className="font-semibold text-gray-800">{faq.q}</span>
+                  <span className={`text-2xl transition-transform ${openFAQ === idx ? "rotate-45 text-red-600" : "text-blue-600"}`}>
+                    +
                   </span>
-                </h3>
+                </button>
                 {openFAQ === idx && (
-                  <p className="mt-3 text-gray-600 text-sm">{faq.a}</p>
+                  <div className="px-5 pb-5 text-gray-600 text-sm animate-in fade-in slide-in-from-top-2">
+                    <p className="border-t pt-4 leading-relaxed">{faq.a}</p>
+                  </div>
                 )}
               </div>
             ))}
@@ -95,31 +94,20 @@ export default function HelpCenterPage() {
         </section>
 
         {/* Contact Section */}
-        <section className="bg-white rounded-2xl p-10 shadow-sm border max-w-5xl mx-auto">
-          <h2 className="text-2xl font-semibold mb-4 text-center">
-            Still Need Help?
-          </h2>
-          <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
-            If you can’t find your answer in the Help Center, reach out to our
-            support team anytime.
-          </p>
-          <div className="grid sm:grid-cols-2 gap-6">
-            <div className="p-6 border rounded-lg flex items-start gap-3 hover:shadow-md transition">
-              <Mail className="h-6 w-6 text-emerald-600 mt-1" />
-              <div>
-                <h3 className="font-semibold">Email Support</h3>
-                <p className="text-gray-600 text-sm">support@jimamu.com</p>
-              </div>
-            </div>
-            <div className="p-6 border rounded-lg flex items-start gap-3 hover:shadow-md transition">
-              <MessageCircle className="h-6 w-6 text-emerald-600 mt-1" />
-              <div>
-                <h3 className="font-semibold">Live Chat</h3>
-                <p className="text-gray-600 text-sm">
-                  Available 24/7 in the Jimamu app
-                </p>
-              </div>
-            </div>
+        <section className="bg-blue-600 rounded-3xl p-10 shadow-xl text-white max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="text-center md:text-left">
+            <h2 className="text-3xl font-bold">Still have questions?</h2>
+            <p className="text-blue-100 mt-2">Our support team is available 24/7 to help you.</p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+            <a href="mailto:support@jimamu.com" className="flex items-center justify-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition">
+              <Mail className="h-5 w-5" />
+              Email Us
+            </a>
+            <button className="flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-red-700 transition">
+              <MessageCircle className="h-5 w-5" />
+              Live Chat
+            </button>
           </div>
         </section>
       </div>

@@ -3,16 +3,16 @@ import { Download, Globe, Package, Shield, Users } from "lucide-react";
 // Hero Section Component
 export default function Hero () {
   return (
-    <section id="home" className="min-h-screen bg-gradient-to-br from-red-50 via-white to-blue-50 pt-16">
+    <section id="home" className="bg-gradient-to-br from-red-50 via-white to-blue-50 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 Deliver
-                <span className="text-red-500"> Anywhere</span>
+                <span className="text-[#A1241C]"> Anywhere</span>
                 <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-blue-500">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A1241C] to-blue-500">
                   Anytime
                 </span>
               </h1>
@@ -23,11 +23,11 @@ export default function Hero () {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2">
+              <button className="bg-[#A1241C] hover:bg-red-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2">
                 <Download className="w-5 h-5" />
                 <span>Download App</span>
               </button>
-              <button className="border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
+              <button className="border-2 border-[#A1241C] text-[#A1241C] hover:bg-[#A1241C] hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
                 <Users className="w-5 h-5" />
                 <span>Join as Rider</span>
               </button>
@@ -35,15 +35,15 @@ export default function Hero () {
             
             <div className="flex items-center space-x-8 pt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-red-500">10K+</div>
+                <div className="text-3xl font-bold text-[#A1241C]">10K+</div>
                 <div className="text-gray-600">Active Users</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-red-500">50K+</div>
+                <div className="text-3xl font-bold text-[#A1241C]">50K+</div>
                 <div className="text-gray-600">Deliveries</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-red-500">100+</div>
+                <div className="text-3xl font-bold text-[#A1241C]">100+</div>
                 <div className="text-gray-600">Cities</div>
               </div>
             </div>
@@ -51,11 +51,11 @@ export default function Hero () {
           
           <div className="relative">
             <div className="relative z-10">
-              <div className="bg-gradient-to-r from-red-500 to-blue-500 rounded-3xl p-8 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-300">
+              <div className="bg-gradient-to-r from-[#A1241C] to-blue-500 rounded-3xl p-8 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-300">
                 <div className="bg-white rounded-2xl p-6 space-y-6">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
-                      <Package className="w-6 h-6 text-red-500" />
+                      <Package className="w-6 h-6 text-[#A1241C]" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900">Quick Delivery</h3>

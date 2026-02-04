@@ -19,9 +19,9 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900">
+    <div className="min-h-screen bg-gray-50 text-gray-900 py-16">
       {/* Hero Section */}
-      <section className="text-center py-16 bg-gradient-to-r from-red-600 to-red-500 text-white">
+      <section className="text-center py-16 bg-gradient-to-r from-red-600 to-[#A1241C] text-white">
         <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
         <p className="text-lg opacity-90">
           We’d love to hear from you. Let’s start a conversation.
@@ -70,7 +70,7 @@ export default function ContactPage() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-red-500 focus:outline-none"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#A1241C] focus:outline-none"
             />
           </div>
 
@@ -83,7 +83,7 @@ export default function ContactPage() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-red-500 focus:outline-none"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#A1241C] focus:outline-none"
             />
           </div>
 
@@ -96,7 +96,7 @@ export default function ContactPage() {
               value={formData.message}
               onChange={handleChange}
               required
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-red-500 focus:outline-none"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#A1241C] focus:outline-none"
             ></textarea>
           </div>
 
