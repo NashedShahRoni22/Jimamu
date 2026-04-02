@@ -3,8 +3,8 @@ import Navbar from "./components/Navbar";
 import "./globals.css";
 
 export const metadata = {
-  title: "Jimamu",
-  description: "Jimamu mobile app",
+  title: "Caro",
+  description: "Caro mobile app",
 };
 
 export default function RootLayout({ children }) {

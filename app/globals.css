@@ -1,1 +1,111 @@
 @import "tailwindcss";
+
+:root {
+	--caro-red: #a1241c;
+	--caro-ink: #111827;
+	--caro-surface: #f8f7f4;
+	--caro-mint: #d9f4ee;
+}
+
+html,
+body {
+	background: radial-gradient(circle at 10% 10%, #fff4f2 0%, #f8f7f4 45%, #eef6ff 100%);
+	color: var(--caro-ink);
+}
+
+.mesh-overlay {
+	background-image: linear-gradient(to right, rgba(17, 24, 39, 0.06) 1px, transparent 1px),
+		linear-gradient(to bottom, rgba(17, 24, 39, 0.06) 1px, transparent 1px);
+	background-size: 42px 42px;
+	mask-image: radial-gradient(circle at center, black, transparent 75%);
+}
+
+.section-shell {
+	position: relative;
+	border: 1px solid rgba(255, 255, 255, 0.65);
+	background: linear-gradient(125deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.64));
+	backdrop-filter: blur(8px);
+	border-radius: 1.5rem;
+	box-shadow: 0 30px 70px rgba(17, 24, 39, 0.08);
+}
+
+.surface-glass {
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	background: linear-gradient(150deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.58));
+	backdrop-filter: blur(10px);
+	box-shadow: 0 18px 35px rgba(17, 24, 39, 0.1);
+}
+
+.reveal-up {
+	opacity: 0;
+	transform: translateY(18px);
+	animation: reveal-up 0.8s ease forwards;
+}
+
+.delay-1 {
+	animation-delay: 0.12s;
+}
+
+.delay-2 {
+	animation-delay: 0.24s;
+}
+
+.delay-3 {
+	animation-delay: 0.36s;
+}
+
+.delay-4 {
+	animation-delay: 0.48s;
+}
+
+.float-slow {
+	animation: float-slow 6s ease-in-out infinite;
+}
+
+.float-fast {
+	animation: float-fast 4.5s ease-in-out infinite;
+}
+
+.gradient-pan {
+	background-size: 190% 190%;
+	animation: gradient-pan 9s ease infinite;
+}
+
+@keyframes reveal-up {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes float-slow {
+	0%,
+	100% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+}
+
+@keyframes float-fast {
+	0%,
+	100% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-6px);
+	}
+}
+
+@keyframes gradient-pan {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

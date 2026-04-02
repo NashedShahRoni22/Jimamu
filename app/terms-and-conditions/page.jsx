@@ -11,7 +11,7 @@ export default function TermsPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-3 text-gray-900 border-b pb-2">1. Introduction</h2>
           <p>
-            Welcome to <strong>Jimamu</strong>. By accessing our platform, you agree to be bound by these Terms & Conditions. Jimamu acts as a marketplace connecting independent Riders with Users for parcel delivery services.
+            Welcome to <strong>Caro</strong>. By accessing our platform, you agree to be bound by these Terms & Conditions. Caro acts as a marketplace connecting independent Riders with Users for parcel delivery services.
           </p>
         </div>
 
@@ -21,14 +21,14 @@ export default function TermsPage() {
           <ul className="list-disc pl-6 space-y-2">
             <li>Users must provide accurate profile details including a unique username and valid contact information.</li>
             <li><strong>Rider Verification:</strong> Riders must submit valid government-issued ID (Passport or Driver’s License) and professional banking information (including Transit and Institution numbers for Canada).</li>
-            <li>Riders are independent contractors and are not employees of Jimamu.</li>
+            <li>Riders are independent contractors and are not employees of Caro.</li>
           </ul>
         </div>
 
         {/* 3. Delivery Services */}
         <div>
           <h2 className="text-2xl font-semibold mb-3 text-gray-900 border-b pb-2">3. Service Types</h2>
-          <p>Jimamu facilitates two primary types of delivery requests:</p>
+          <p>Caro facilitates two primary types of delivery requests:</p>
           <ul className="list-disc pl-6 mt-2 space-y-2">
             <li><strong>National (Domestic):</strong> Deliveries within the same country (e.g., within Canada).</li>
             <li><strong>Global (International):</strong> Cross-border deliveries between different countries.</li>
@@ -38,7 +38,7 @@ export default function TermsPage() {
         {/* 4. Pricing & Minimum Offers */}
         <div>
           <h2 className="text-2xl font-semibold mb-3 text-gray-900 border-b pb-2">4. Pricing & The Offer System</h2>
-          <p>Jimamu allows Users to suggest an estimated offer for their delivery. However, to ensure fair compensation and service sustainability, the following <strong>Minimum Floors</strong> apply:</p>
+          <p>Caro allows Users to suggest an estimated offer for their delivery. However, to ensure fair compensation and service sustainability, the following <strong>Minimum Floors</strong> apply:</p>
           <div className="mt-4 bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500">
             <ul className="list-none space-y-2 font-medium">
               <li>🇨🇦 <strong>National (Canada):</strong> Minimum offer starts at <strong>$10.00 CAD</strong>.</li>
@@ -66,7 +66,7 @@ export default function TermsPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-3 text-gray-900 border-b pb-2">6. Payments & Payouts</h2>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Payments are held in escrow by Jimamu and released to the Rider only upon successful delivery verification (via OTP or digital signature).</li>
+            <li>Payments are held in escrow by Caro and released to the Rider only upon successful delivery verification (via OTP or digital signature).</li>
             <li>Riders are responsible for all taxes (including income tax and HST/GST in Canada) arising from their earnings.</li>
           </ul>
         </div>
@@ -75,7 +75,7 @@ export default function TermsPage() {
         <div className="bg-red-50 p-6 rounded-xl border border-red-100">
           <h2 className="text-xl font-bold mb-2 text-red-900">7. Dispute Resolution</h2>
           <p className="text-red-800">
-            In the event of a lost, damaged, or delayed parcel, Jimamu will investigate based on the "Order Photos" provided at pickup and drop-off. Our liability is limited to the platform service fee unless additional insurance was purchased.
+            In the event of a lost, damaged, or delayed parcel, Caro will investigate based on the "Order Photos" provided at pickup and drop-off. Our liability is limited to the platform service fee unless additional insurance was purchased.
           </p>
         </div>
 
@@ -83,7 +83,7 @@ export default function TermsPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-3 text-gray-900 border-b pb-2">8. Governing Law</h2>
           <p>
-            These terms are governed by the laws of the province and country in which the service is registered (Canada). International disputes will be handled through arbitration as defined by Jimamu's legal headquarters.
+            These terms are governed by the laws of the province and country in which the service is registered (Canada). International disputes will be handled through arbitration as defined by Caro's legal headquarters.
           </p>
         </div>
       </section>

@@ -10,35 +10,47 @@ export default function HelpCenterPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-16">
-      {/* Hero Section - Updated to your Red theme */}
-      <div className="bg-gradient-to-r from-red-600 to-red-700 text-white py-20 px-6 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold">How can we help?</h1>
-        <p className="mt-4 max-w-2xl mx-auto text-lg text-red-50">
-          Find answers to common questions about Jimamu's global and national delivery network.
-        </p>
-      </div>
+    <div className="relative min-h-screen py-16 px-4 sm:px-6 lg:px-8 overflow-x-clip">
+      <div className="pointer-events-none absolute inset-0 mesh-overlay opacity-35"></div>
+      <div className="pointer-events-none absolute -top-24 -left-20 h-72 w-72 rounded-full bg-red-200/40 blur-3xl"></div>
+      <div className="pointer-events-none absolute top-72 -right-20 h-72 w-72 rounded-full bg-sky-200/40 blur-3xl"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 space-y-16">
+      <div className="max-w-7xl mx-auto relative z-10 space-y-16">
+        <section className="section-shell text-center py-14 px-6 sm:px-10">
+          <p className="reveal-up inline-flex items-center rounded-full border border-red-200 bg-white/80 px-4 py-2 text-xs sm:text-sm font-semibold tracking-[0.18em] text-[#A1241C] uppercase">
+            Help Center
+          </p>
+          <h1 className="reveal-up delay-1 text-4xl md:text-5xl font-black mt-5 text-gray-900">How Can We Help?</h1>
+          <p className="reveal-up delay-2 mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+            Find answers to common questions about Caro's global and national delivery network.
+          </p>
+        </section>
+
         {/* Support Categories */}
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="p-8 rounded-2xl bg-white border shadow-sm hover:shadow-lg transition group">
-            <User className="h-10 w-10 text-blue-600 mb-4 group-hover:scale-110 transition-transform" />
-            <h3 className="font-bold text-xl mb-2">Rider Registration</h3>
+          <div className="surface-glass reveal-up delay-1 p-8 rounded-2xl transition-all hover:-translate-y-1 group">
+            <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-sky-500 to-blue-600 text-white flex items-center justify-center shadow-lg mb-4 group-hover:scale-105 transition-transform">
+              <User className="h-5 w-5" />
+            </div>
+            <h3 className="font-black text-xl mb-2 text-gray-900">Rider Registration</h3>
             <p className="text-gray-600 text-sm leading-relaxed">
               Required documents for Canada: ID, Transit Number, and SIN for tax compliance.
             </p>
           </div>
-          <div className="p-8 rounded-2xl bg-white border shadow-sm hover:shadow-lg transition group">
-            <Globe className="h-10 w-10 text-red-600 mb-4 group-hover:scale-110 transition-transform" />
-            <h3 className="font-bold text-xl mb-2">National & Global</h3>
+          <div className="surface-glass reveal-up delay-2 p-8 rounded-2xl transition-all hover:-translate-y-1 group">
+            <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-[#A1241C] to-red-500 text-white flex items-center justify-center shadow-lg mb-4 group-hover:scale-105 transition-transform">
+              <Globe className="h-5 w-5" />
+            </div>
+            <h3 className="font-black text-xl mb-2 text-gray-900">National & Global</h3>
             <p className="text-gray-600 text-sm leading-relaxed">
               Understand the difference between domestic (Canada) and international delivery routes.
             </p>
           </div>
-          <div className="p-8 rounded-2xl bg-white border shadow-sm hover:shadow-lg transition group">
-            <Wallet className="h-10 w-10 text-green-600 mb-4 group-hover:scale-110 transition-transform" />
-            <h3 className="font-bold text-xl mb-2">Earnings & Offers</h3>
+          <div className="surface-glass reveal-up delay-3 p-8 rounded-2xl transition-all hover:-translate-y-1 group">
+            <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-500 to-green-600 text-white flex items-center justify-center shadow-lg mb-4 group-hover:scale-105 transition-transform">
+              <Wallet className="h-5 w-5" />
+            </div>
+            <h3 className="font-black text-xl mb-2 text-gray-900">Earnings & Offers</h3>
             <p className="text-gray-600 text-sm leading-relaxed">
               Learn about our $10 CAD national floor and how to receive payouts.
             </p>
@@ -48,8 +60,9 @@ export default function HelpCenterPage() {
         {/* FAQ Section */}
         <section>
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-gray-900">Frequently Asked Questions</h2>
-            <p className="text-gray-500 mt-2">Quick answers to our most popular queries</p>
+            <p className="reveal-up text-xs font-semibold uppercase tracking-[0.2em] text-[#A1241C] mb-3">FAQ</p>
+            <h2 className="reveal-up delay-1 text-3xl sm:text-4xl font-black text-gray-900">Frequently Asked Questions</h2>
+            <p className="reveal-up delay-2 text-gray-500 mt-2">Quick answers to our most popular queries</p>
           </div>
           <div className="space-y-4 max-w-3xl mx-auto">
             {[
@@ -67,15 +80,15 @@ export default function HelpCenterPage() {
               },
               {
                 q: "Are my documents secure?",
-                a: "Yes. Jimamu uses high-level encryption for all sensitive data, including your Government IDs and banking information, complying with Canadian PIPEDA regulations.",
+                a: "Yes. Caro uses high-level encryption for all sensitive data, including your Government IDs and banking information, complying with Canadian PIPEDA regulations.",
               },
             ].map((faq, idx) => (
               <div
                 key={idx}
-                className="bg-white border rounded-xl overflow-hidden transition-all duration-200"
+                className="surface-glass reveal-up rounded-xl overflow-hidden transition-all duration-200"
               >
                 <button
-                  className="w-full p-5 text-left flex justify-between items-center hover:bg-gray-50"
+                  className="w-full p-5 text-left flex justify-between items-center hover:bg-white/50"
                   onClick={() => toggleFAQ(idx)}
                 >
                   <span className="font-semibold text-gray-800">{faq.q}</span>
@@ -94,17 +107,17 @@ export default function HelpCenterPage() {
         </section>
 
         {/* Contact Section */}
-        <section className="bg-blue-600 rounded-3xl p-10 shadow-xl text-white max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+        <section className="rounded-3xl p-10 shadow-xl text-white max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 bg-gradient-to-br from-[#A1241C] via-red-600 to-[#111827] gradient-pan reveal-up">
           <div className="text-center md:text-left">
-            <h2 className="text-3xl font-bold">Still have questions?</h2>
-            <p className="text-blue-100 mt-2">Our support team is available 24/7 to help you.</p>
+            <h2 className="text-3xl font-black">Still have questions?</h2>
+            <p className="text-red-100 mt-2">Our support team is available 24/7 to help you.</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
-            <a href="mailto:support@jimamu.com" className="flex items-center justify-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition">
+            <a href="mailto:support@caro.com" className="flex items-center justify-center gap-2 bg-white text-[#A1241C] px-8 py-4 rounded-xl font-bold hover:bg-red-50 transition">
               <Mail className="h-5 w-5" />
               Email Us
             </a>
-            <button className="flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-red-700 transition">
+            <button className="flex items-center justify-center gap-2 bg-black/25 border border-white/30 text-white px-8 py-4 rounded-xl font-bold hover:bg-black/35 transition">
               <MessageCircle className="h-5 w-5" />
               Live Chat
             </button>

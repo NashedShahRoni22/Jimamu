@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
-import logo from "@/public/images/logo.svg";
+import logo from "@/public/images/logo.png";
 import Image from 'next/image';
 
 // Navbar Component

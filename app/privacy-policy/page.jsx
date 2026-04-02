@@ -34,7 +34,7 @@ export default function PrivacyPage() {
         {/* 3. Data Sharing */}
         <div>
           <h2 className="text-2xl font-semibold mb-3 text-gray-900 border-b pb-2">3. Data Sharing</h2>
-          <p>Jimamu does not sell your personal data. We share limited information with:</p>
+          <p>Caro does not sell your personal data. We share limited information with:</p>
           <ul className="list-disc pl-6 mt-2 space-y-2">
             <li><strong>Delivery Participants:</strong> Riders see pickup/drop-off details; Customers see Rider name and location.</li>
             <li><strong>Payment Partners:</strong> Bank and MFS providers to facilitate fund transfers.</li>
@@ -84,7 +84,7 @@ export default function PrivacyPage() {
           <h2 className="text-xl font-bold mb-2">8. Contact Us</h2>
           <p>If you have questions about this policy or wish to exercise your rights, contact our Privacy Officer:</p>
           <div className="mt-4 text-sm">
-            <p><strong>Email:</strong> privacy@jimamu.com</p>
+            <p><strong>Email:</strong> privacy@caro.com</p>
             <p><strong>Address:</strong> [Your Canadian Business Address]</p>
           </div>
         </div>

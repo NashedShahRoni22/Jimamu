@@ -1,7 +1,7 @@
 import React from "react";
 import SocialIcon from "./SocialIcon";
 import FooterLink from "./FooterLink";
-import logo from "@/public/images/logo.svg";
+import logo from "@/public/images/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -50,7 +50,7 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-4">Contact Info</h3>
             <div className="space-y-2 text-gray-400">
-              <p>📧 support@jimamu.com</p>
+              <p>📧 support@caro.com</p>
               <p>📞 +1 (555) 123-4567</p>
               <p>📍 123 Delivery Street, City, State 12345</p>
             </div>
@@ -59,7 +59,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
           <p>
-            &copy; {new Date().getFullYear()} Jimamu. All rights reserved. Built with ❤️ for seamless
+            &copy; {new Date().getFullYear()} Caro. All rights reserved. Built with ❤️ for seamless
             deliveries.
           </p>
         </div>
